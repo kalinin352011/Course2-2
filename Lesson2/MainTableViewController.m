@@ -7,7 +7,12 @@
 //
 
 #import "MainTableViewController.h"
+#import "LoadingTableViewController.h"
 
 @implementation MainTableViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
 
 @end

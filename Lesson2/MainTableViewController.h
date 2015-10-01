@@ -6,9 +6,8 @@
 //  Copyright © 2015 Azat Almeev. All rights reserved.
 //
 
-#import "LoadingTableViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MainTableViewController : LoadingTableViewController
-
+@interface MainTableViewController : UITableViewController
 @end
 

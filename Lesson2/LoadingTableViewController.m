@@ -8,7 +8,10 @@
 
 #import "LoadingTableViewController.h"
 
-@implementation LoadingTableViewController
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
+
+@implementation UIViewController (LoadingController)
 
 - (NSArray *)arrayFromStart:(NSNumber *)start {
     NSMutableArray *res = [NSMutableArray new];
@@ -28,12 +31,6 @@
         [self performSelector:@selector(didFailToLoadDataWithError:) withObject:[NSError errorWithDomain:@"Lesson2" code:500 userInfo:@{ NSLocalizedDescriptionKey : @"Internal error during loading data" }] afterDelay:delay];
 }
 
-- (void)didLoadNewData:(NSArray *)items {
-    @throw [NSException exceptionWithName:@"Missing implementation" reason:@"You should override that method in subclass" userInfo:nil];
-}
-
-- (void)didFailToLoadDataWithError:(NSError *)error {
-    @throw [NSException exceptionWithName:@"Missing implementation" reason:@"You should override that method in subclass" userInfo:nil];
-}
+#pragma clang diagnostic pop
 
 @end

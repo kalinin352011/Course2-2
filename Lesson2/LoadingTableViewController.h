@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoadingTableViewController : UITableViewController
+@interface UIViewController (LoadingController)
 - (void)loadDataUsingLastID:(NSNumber *)lastId;
 - (void)didLoadNewData:(NSArray *)items;
 - (void)didFailToLoadDataWithError:(NSError *)error;
