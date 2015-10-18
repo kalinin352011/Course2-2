@@ -2,12 +2,14 @@
 //  MyCollectionViewController.h
 //  Lesson2
 //
-//  Created by Azat Almeev on 01.10.15.
+//  Created by tim on 07.10.15.
 //  Copyright © 2015 Azat Almeev. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LoadingCollectionViewController.h"
 
-@interface MyCollectionViewController : UICollectionViewController
-
+@interface MyCollectionViewController : LoadingCollectionViewController
+@property (nonatomic) NSMutableArray *items;
+@property BOOL isLoading;
+@property BOOL didFail;
 @end

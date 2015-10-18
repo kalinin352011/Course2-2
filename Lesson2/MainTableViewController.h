@@ -6,8 +6,11 @@
 //  Copyright © 2015 Azat Almeev. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LoadingTableViewController.h"
 
-@interface MainTableViewController : UITableViewController
+@interface MainTableViewController : LoadingTableViewController
+@property (nonatomic) NSMutableArray *items;
+@property BOOL isLoading;
+@property BOOL didFail;
 @end
 

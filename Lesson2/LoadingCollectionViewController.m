@@ -1,14 +1,14 @@
 //
-//  LoadingTableViewController.m
+//  LoadingCollectionViewController.m
 //  Lesson2
 //
-//  Created by Azat Almeev on 26.09.15.
+//  Created by tim on 07.10.15.
 //  Copyright © 2015 Azat Almeev. All rights reserved.
 //
 
-#import "LoadingTableViewController.h"
+#import "LoadingCollectionViewController.h"
 
-@implementation LoadingTableViewController
+@implementation LoadingCollectionViewController
 
 - (NSArray *)arrayFromStart:(NSNumber *)start {
     NSMutableArray *res = [NSMutableArray new];
